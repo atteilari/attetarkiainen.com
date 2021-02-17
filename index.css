@@ -1,0 +1,160 @@
+html, body { 
+	overflow-x: hidden;
+	color: #FFFFFF;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	font-family:"Inconsolata", monospace;
+	align-content: center;
+	text-align: center;
+	padding-bottom: 0.25%;
+	padding-top: 0.25%;
+}
+
+footer a, footer a:visited, footer a:hover, footer a:active {
+	color: #FFAB52;
+	text-decoration:none;
+}
+
+hr {
+    margin: 30px 0;
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, white));
+    margin-bottom: 1%;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 175%;
+	margin-left: 2%;
+}
+
+.navbar-nav {
+	margin-right: 2%;
+	font-family:"Inconsolata", monospace;
+	font-size: 110%;
+}
+
+.navbar a {
+	color: #7ECDDF;
+}
+
+.navbar a:hover {
+	color: #5F9AA7;
+}
+
+.nav-item {
+	padding-right: 10px;
+}
+
+.firstslave {
+	display: inline-block;
+  	padding-right: 1px;
+  	transition: all 1s;
+}
+
+.secondslave { display: inline-block;
+	padding-left: 1px;
+	transition: all 1s;
+}
+
+.nav-item:hover .firstslave {
+	display: inline-block;
+	padding-right: 10px;
+	transition: all 1s;
+}
+
+.nav-item:hover .secondslave {
+	display: inline-block;
+	padding-left: 10px;
+	transition: all 1s;
+}
+
+.banner {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	text-align: center;
+	background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.banner h1 {
+	margin-top: 190%;
+	color: #000000;
+	font-family: "Inconsolata", monospace;
+	font-weight: 700;
+	font-size: 200%;
+}
+
+.banner h2 {
+	margin-top: 50%;
+	color: #000000;
+	font-family: "Inconsolata", monospace;
+}
+
+.banner p {
+	color: #000000;
+	font-family: "Inconsolata", monospace;
+}
+
+.btn {
+	border: 2px solid #FFAB52;
+	background-color: rgba(0, 0, 0, 0.35);
+	color: #000000;
+	font-size: 105%;
+
+}
+
+.btn:hover {
+	border: 2px solid #FFAB52;
+	background-color: rgba(0, 0, 0, 0.25);
+	color: #FFAB52;
+	font-size: 105%;
+}
+
+.about-me {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-image: url(aboutme.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.about-me h1 {
+	font-family: "Inconsolata", monospace;
+	font-weight: 700;
+}
+
+.about-me h4 {
+	font-family: "Inconsolata", monospace;
+}
+
+.about-me p {
+	font-family: "Inconsolata", monospace;
+}
+
+.about-me li {
+	font-family: "Inconsolata", monospace;
+}
+
+.about-me a, .about-me a:visited, .about-me a:hover, .about-me a:active {
+	color: #FFAB52;
+	text-decoration:none;
+}
