@@ -1,0 +1,99 @@
+html {
+	color: black;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	font-family:"Inconsolata", monospace;
+	align-content: center;
+	text-align: center;
+	padding-bottom: 0.25%;
+	padding-top: 0.25%;
+}
+
+footer a, footer a:visited, footer a:hover, footer a:active {
+	color: #FFAB52;
+	text-decoration:none;
+}
+
+hr {
+    margin: 30px auto;
+    height: 200px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #000000));
+    margin-bottom: 1%;
+}
+
+h1, h2 {
+	font-family: "Inconsolata", monospace;
+	text-align: center;
+}
+
+p {
+	font-family: "Inconsolata", monospace;
+	text-align: left;
+}
+
+h2 {
+	color: #FFAB52;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 175%;
+	margin-left: 2%;
+}
+
+.navbar-nav {
+	margin-right: 2%;
+	font-family:"Inconsolata", monospace;
+	font-size: 110%;
+}
+
+.navbar a {
+	color: #7ECDDF;
+}
+
+.navbar a:hover {
+	color: #5F9AA7;
+}
+
+.nav-item {
+	padding-right: 10px;
+}
+
+.firstslave {
+	display: inline-block;
+  	padding-right: 1px;
+  	transition: all 1s;
+}
+
+.secondslave { display: inline-block;
+	padding-left: 1px;
+	transition: all 1s;
+}
+
+.nav-item:hover .firstslave {
+	display: inline-block;
+	padding-right: 10px;
+	transition: all 1s;
+}
+
+.nav-item:hover .secondslave {
+	display: inline-block;
+	padding-left: 10px;
+	transition: all 1s;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(126, 205, 223, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgb(126, 205, 223);
+} 
