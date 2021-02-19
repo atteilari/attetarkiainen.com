@@ -18,14 +18,17 @@ footer {
 	padding-top: 0.25%;
 }
 
+footer a, footer a:visited, footer a:hover, footer a:active {
+	color: #FFAB52;
+	text-decoration:none;
+}
+
 .navbar {
 	background-color: rgba(255, 255, 255, 0.08);
 }
 
 .navbar-brand {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 175%;
-	margin-left: 2%;
+	font-family: "Inconsolata", monospace;
 }
 
 .navbar-nav {

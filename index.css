@@ -1,12 +1,18 @@
-html, body { 
-	overflow-x: hidden;
-	color: #FFFFFF;
+body {
+	font-family: "Inconsolata", monospace;
+}
+
+hr {
+    margin: 30px 0;
+    height: 1px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, white));
+    margin-bottom: 1%;
 }
 
 footer {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: #272727;
 	color: white;
-	font-family:"Inconsolata", monospace;
 	align-content: center;
 	text-align: center;
 	padding-bottom: 0.25%;
@@ -18,49 +24,25 @@ footer a, footer a:visited, footer a:hover, footer a:active {
 	text-decoration:none;
 }
 
-hr {
-    margin: 30px 0;
-    height: 1px;
-    border: none;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, white));
-    margin-bottom: 1%;
+.bg-dark {
+	background-color: #393939 !important;
 }
 
-.navbar {
-	background-color: rgba(0, 0, 0, 0.4);
+.nav-link, .navbar-brand {
+	color: #7ECDDF !important;
 }
 
-.navbar-brand {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 175%;
-	margin-left: 2%;
-}
-
-.navbar-nav {
-	margin-right: 2%;
-	font-family:"Inconsolata", monospace;
-	font-size: 110%;
+.nav-link:hover, .navbar-brand:hover {
+	color: #5F9AA7 !important;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(126, 205, 223, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(126, 205, 223, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .navbar-toggler {
-  border-color: rgb(126, 205, 223);
+  border-color: rgb(126, 205, 223) !important;
 } 
-
-.navbar a {
-	color: #7ECDDF;
-}
-
-.navbar a:hover {
-	color: #5F9AA7;
-}
-
-.nav-item {
-	padding-right: 10px;
-}
 
 .firstslave {
 	display: inline-block;
@@ -85,84 +67,52 @@ hr {
 	transition: all 1s;
 }
 
-.banner {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: flex-end;
+.left {
+	height: 200px;
+	width: 350px;
+	position: absolute;
+	top: 160px;
+	left: 100px;
 	text-align: center;
-	background-image: url(banner.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
 }
 
-.banner h1 {
-	margin-top: 190%;
-	color: #000000;
-	font-family: "Inconsolata", monospace;
-	font-weight: 700;
-	font-size: 200%;
-}
-
-.banner h2 {
-	margin-top: 50%;
-	color: #000000;
-	font-family: "Inconsolata", monospace;
-}
-
-.banner p {
-	color: #000000;
-	font-family: "Inconsolata", monospace;
-}
-
-.btn {
-	border: 2px solid #FFAB52;
-	background-color: rgba(0, 0, 0, 0.35);
-	color: #000000;
-	font-size: 105%;
-
-}
-
-.btn:hover {
-	border: 2px solid #FFAB52;
-	background-color: rgba(0, 0, 0, 0.25);
-	color: #FFAB52;
-	font-size: 105%;
+.right {
+	height: 200px;
+	width: 350px;
+	position: absolute;
+	top: 160px;
+	right: 80px;
+	text-align: center;
 }
 
 .about-me {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	background-image: url(aboutme.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-.about-me h1 {
-	font-family: "Inconsolata", monospace;
-	font-weight: 700;
-}
-
-.about-me h4 {
-	font-family: "Inconsolata", monospace;
-}
-
-.about-me p {
-	font-family: "Inconsolata", monospace;
-}
-
-.about-me li {
-	font-family: "Inconsolata", monospace;
+	background-color: #393939;
+	color: #FFFFFF;
 }
 
 .about-me a, .about-me a:visited, .about-me a:hover, .about-me a:active {
 	color: #FFAB52;
 	text-decoration:none;
+}
+
+
+@media (max-width: 1024px) {
+	.left, .right {
+		font-size: 12px;
+		top: 120px;
+		width: 300px;
+	}
+
+	.left {
+		left: 20px;
+	}
+
+	.right {
+		right: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.left, .right {
+		display: none;
 }

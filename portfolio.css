@@ -1,16 +1,19 @@
+body {
+  font-family: "Inconsolata", monospace;
+}
+
 footer {
-	background-color: rgba(0, 0, 0, 0.4);
-	color: white;
-	font-family:"Inconsolata", monospace;
-	align-content: center;
-	text-align: center;
-	padding-bottom: 0.25%;
-	padding-top: 0.25%;
+  background-color: #272727;
+  color: white;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 0.25%;
+  padding-top: 0.25%;
 }
 
 footer a, footer a:visited, footer a:hover, footer a:active {
-	color: #FFAB52;
-	text-decoration:none;
+  color: #FFAB52;
+  text-decoration:none;
 }
 
 hr {
@@ -21,63 +24,47 @@ hr {
     margin-bottom: 1%;
 }
 
-.navbar {
-	background-color: rgba(0, 0, 0, 0.4);
+.bg-dark {
+  background-color: #393939 !important;
 }
 
-.navbar-brand {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 175%;
-	margin-left: 2%;
+.nav-link, .navbar-brand {
+  color: #7ECDDF !important;
 }
 
-.navbar-nav {
-	margin-right: 2%;
-	font-family:"Inconsolata", monospace;
-	font-size: 110%;
+.nav-link:hover, .navbar-brand:hover {
+  color: #5F9AA7 !important;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(126, 205, 223, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(126, 205, 223, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .navbar-toggler {
-  border-color: rgb(126, 205, 223);
+  border-color: rgb(126, 205, 223) !important;
 } 
 
-.navbar a {
-	color: #7ECDDF;
-}
-
-.navbar a:hover {
-	color: #5F9AA7;
-}
-
-.nav-item {
-	padding-right: 10px;
-}
-
 .firstslave {
-	display: inline-block;
-  	padding-right: 1px;
-  	transition: all 1s;
+  display: inline-block;
+  padding-right: 1px;
+  transition: all 1s;
 }
 
 .secondslave { display: inline-block;
-	padding-left: 1px;
-	transition: all 1s;
+  padding-left: 1px;
+  transition: all 1s;
 }
 
 .nav-item:hover .firstslave {
-	display: inline-block;
-	padding-right: 10px;
-	transition: all 1s;
+  display: inline-block;
+  padding-right: 10px;
+  transition: all 1s;
 }
 
 .nav-item:hover .secondslave {
-	display: inline-block;
-	padding-left: 10px;
-	transition: all 1s;
+  display: inline-block;
+  padding-left: 10px;
+  transition: all 1s;
 }
 
 .portfolio h1 {
