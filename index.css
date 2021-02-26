@@ -1,39 +1,36 @@
+/* Variables */
+/* Tags */
 body {
-	font-family: "Inconsolata", monospace;
+  background-color: #393939;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  color: black;
 }
 
 hr {
-    margin: 30px 0;
-    height: 1px;
-    border: none;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, white));
-    margin-bottom: 1%;
+  margin: 30px 0;
+  height: 10px;
+  border: none;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #FFAB52));
+  margin-bottom: 1%;
 }
 
 footer {
-	background-color: #272727;
-	color: white;
-	align-content: center;
-	text-align: center;
-	padding-bottom: 0.25%;
-	padding-top: 0.25%;
+  color: #7ECDDF;
+  text-align: center;
 }
 
-footer a, footer a:visited, footer a:hover, footer a:active {
-	color: #FFAB52;
-	text-decoration:none;
-}
-
-.bg-dark {
-	background-color: #393939 !important;
+/* Classes */
+.navbar {
+  background-color: #393939 !important;
 }
 
 .nav-link, .navbar-brand {
-	color: #7ECDDF !important;
+  color: #7ECDDF !important;
 }
 
 .nav-link:hover, .navbar-brand:hover {
-	color: #5F9AA7 !important;
+  color: #5F9AA7 !important;
 }
 
 .navbar-toggler-icon {
@@ -41,78 +38,149 @@ footer a, footer a:visited, footer a:hover, footer a:active {
 }
 
 .navbar-toggler {
-  border-color: rgb(126, 205, 223) !important;
-} 
-
-.firstslave {
-	display: inline-block;
-  	padding-right: 1px;
-  	transition: all 1s;
+  border-color: #7ECDDF !important;
 }
 
-.secondslave { display: inline-block;
-	padding-left: 1px;
-	transition: all 1s;
+.firstslave {
+  display: inline-block;
+  padding-right: 1px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.secondslave {
+  display: inline-block;
+  padding-left: 1px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .nav-item:hover .firstslave {
-	display: inline-block;
-	padding-right: 10px;
-	transition: all 1s;
+  display: inline-block;
+  padding-right: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .nav-item:hover .secondslave {
-	display: inline-block;
-	padding-left: 10px;
-	transition: all 1s;
+  display: inline-block;
+  padding-left: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .left {
-	height: 200px;
-	width: 350px;
-	position: absolute;
-	top: 160px;
-	left: 100px;
-	text-align: center;
+  height: 200px;
+  width: 350px;
+  position: absolute;
+  top: 160px;
+  left: 100px;
 }
 
 .right {
-	height: 200px;
-	width: 350px;
-	position: absolute;
-	top: 160px;
-	right: 80px;
-	text-align: center;
+  height: 200px;
+  width: 350px;
+  position: absolute;
+  top: 160px;
+  right: 80px;
 }
 
-.about-me {
-	background-color: #393939;
-	color: #FFFFFF;
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white !important;
 }
 
-.about-me a, .about-me a:visited, .about-me a:hover, .about-me a:active {
-	color: #FFAB52;
-	text-decoration:none;
+.border-gradient {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
 }
 
+.border-gradient-accent {
+  border-image-source: linear-gradient(to left, #FFAB52, #7ECDDF);
+}
 
+.btn-primary {
+  background-color: transparent;
+}
+
+.btn-primary :hover {
+  background-color: #4F808B;
+}
+
+.blue {
+  color: #7ECDDF;
+}
+
+.orange {
+  color: #FFAB52;
+}
+
+.cc {
+  -webkit-animation: color-change 6s infinite;
+          animation: color-change 6s infinite;
+}
+
+.links {
+  padding-top: 15px;
+}
+
+.links i, .links a {
+  padding-left: 6px;
+  color: #7ECDDF;
+}
+
+.links i :hover, .links a :hover {
+  color: #5F9AA7;
+}
+
+/* ID's */
+#showcase {
+  color: white;
+}
+
+/* Keyframes */
+@-webkit-keyframes color-change {
+  0% {
+    color: #7ECDDF;
+  }
+  50% {
+    color: #FFAB52;
+  }
+  100% {
+    color: #7ECDDF;
+  }
+}
+@keyframes color-change {
+  0% {
+    color: #7ECDDF;
+  }
+  50% {
+    color: #FFAB52;
+  }
+  100% {
+    color: #7ECDDF;
+  }
+}
+
+/* Media Querys */
 @media (max-width: 1024px) {
-	.left, .right {
-		font-size: 12px;
-		top: 120px;
-		width: 300px;
-	}
-
-	.left {
-		left: 20px;
-	}
-
-	.right {
-		right: 20px;
-	}
+  .left, .right {
+    font-size: 12px;
+    top: 120px;
+    width: 300px;
+  }
+  .left {
+    left: 20px;
+  }
+  .right {
+    right: 20px;
+  }
 }
 
 @media (max-width: 767px) {
-	.left, .right {
-		display: none;
+  .left, .right {
+    display: none;
+  }
 }
+/*# sourceMappingURL=index.css.map */
