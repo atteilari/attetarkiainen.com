@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     text-align: center;
     font-family: 'Source Code Pro', monospace;
@@ -14,10 +18,65 @@ a:hover {
     color: #85898F;
 }
 
-footer {
-    color: #5d626a;
+.title {
+    color: #85898F;
 }
 
+main {
+    text-shadow: 2px 2px 4px #0f0f0f;
+}
+
+input, textarea {
+    width: 90%;
+    margin-top: 1%;
+}
+
+footer {
+    color: #5d626a;
+    text-shadow: 2px 2px 4px #0f0f0f;
+}
+
+/* Scroll down animation classes */
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 90%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #1b1b1b;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #1b1b1b;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scrolldown;
+}
+
+@keyframes scrolldown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+/* navbar */
 .navbar a {
     margin-top: 25px;
     margin-bottom: 20px;
@@ -70,6 +129,8 @@ footer {
     letter-spacing: 5px;
 }
 
+
+
 /* Audio button used by audio.js */
 #play {
     font-size: 16px;
@@ -84,12 +145,13 @@ footer {
     color: #5d626a;
 }
 
-input, textarea {
-    width: 90%;
-    margin-top: 1%;
-  }
+/* Custom animations based on Animate.css */
+.fadingIn {
+    animation: fadeInLeft;
+    animation-duration: 2s;
+}
 
-/* KK */
+/* Custom version of responsive Bootstrap timeline found here: */
 
 .main-timeline {
     position: relative
@@ -274,6 +336,20 @@ input, textarea {
     text-align: right
 }
 
+.card {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 2px 5px #1b1b1b;
+}
+
+.card-img-overlay {
+    color: white;
+    background-color: #1b1b1be3;
+    top: 60% !important;
+}
+
 @media only screen and (max-width: 991px) {
     .main-timeline .date-content {
         margin-top: 35px
@@ -339,4 +415,4 @@ input, textarea {
         margin-bottom: 10px
     }
 }
-
+  
