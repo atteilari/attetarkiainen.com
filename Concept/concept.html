@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <!-- Meta Tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="follow">
+        <meta name="author" content="Atte Tarkiainen">
+        <meta name="copyright" content="2021"> 
+        <meta name="description" content="Atte Tarkiainen, first year information technology & business administration student, web developer, designer & IT enthusiast. This is my official portfolio & resume website.">
+        <meta name="keywords" content="Atte Tarkiainen, web developement, developer, creative, javascript, coding, coder, programmer, designer, webdev, webdesign"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://attetarkiainen.com/">
+        <meta property="og:title" content="Atte Tarkiainen | Resume">
+        <meta property="og:description" content="Atte Tarkiainen, first year information technology & business administration student, web developer, designer & IT enthusiast. This is my official portfolio & resume website.">
+        <meta property="og:image" content="IMAGE URL HERE IMAGE URL HERE"/>
+        <meta property="og:image:type" content="image/jpg"/>
+        <meta property="og:image:width" content="XX"/>
+        <meta property="og:image:height" content="YY"/>
+        <!-- End Meta Tags -->
+
         <!-- CSS-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" />        <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -11,7 +27,16 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="concept.css">
+        <!-- End CSS -->
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <!-- End Favicon -->
+
         <title>Atte Tarkiainen | Resume</title>
+
     </head>
     <body>
 
@@ -31,7 +56,7 @@
                             <a class="nav-link" href="#projects">PROJECTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">CONTACT</a>
+                            <a class="nav-link" href="mailto:attetarkiainen1@gmail.com">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +66,7 @@
 
         <!-- Landing -->
         <section id="landing">
-            <img src="banner.jpg" class="banner">
+            <img src="banner.jpg" class="banner" alt="Atte Tarkiainen">
             <div class="banner-content-left">
                 <h1>STUDENT</h1>
                 <p>First year Information Technology & Business student in the Bachelors of Business Administration program at Laurea University of Applied Sciences</p>
@@ -58,7 +83,8 @@
         <div id="about" style="height: 100px;"></div>
         <main class="container about">
             <div class="row">
-                <div class="col">
+                <h1 style="color: #85898F;">| ABOUT |</h1>
+                <div class="col-md">
                     <h2 style="color: #85898F;">| SKILLS |</h2>
                     <i class="fab fa-3x fa-html5" style="color: #e44c26;"></i>
                     <p class="test">HTML5</p>
@@ -71,10 +97,10 @@
                     <i class="fab fa-3x fa-git-alt" style="color: #e84d31;"></i>
                     <p>GIT | GITHUB</p>
                 </div>
-                <div class="col">
+                <div class="col-md">
                     <h2 style="color: #85898F;">| BIO |</h2>
                     <h5 style="color: #85898F;"> Finnish & English | 21 Years | Helsinki, FI</h5>
-                    <p>Ambitious & self motivated Business & Information Technology student specializing in web developement & project management. My current skillset contains languages & technologies best suited for Jr. front-end developement, but I work diligently to expand my ICT knowledge through my studies and my hobby projects.</p>
+                    <p>Ambitious & self motivated Business & Information Technology student specializing in web developement & project/team management. As a self motivated learner, curiosity to try out something new, is what drives me forward. While my current skillset includes languages and technologies best suited for Jr. Front End developement, through my studies & my hobby projects I constantly look for ways to expand my ICT knowledge into new applicable web based technologies.</p>
                     <p>I am fluent in English & Finnish, and I...</p>
                 </div>
             </div>
@@ -83,6 +109,13 @@
 
         <!-- Timeline -->
         <main class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <h1 style="margin-bottom: 0px; border: 1px solid white; color: #85898F;">EXPERIENCE</h1>
+                </div>
+                <div class="col-4"></div>
+            </div>
             <div class="main-timeline">
                 <div class="timeline">
                     <div class="icon"></div>
@@ -152,7 +185,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline">
+                <div class="timeline" style="margin-bottom: 0;">
                     <div class="icon"></div>
                     <div class="date-content">
                         <div class="date-outer">
@@ -170,17 +203,29 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <h1 style="margin-bottom: 0px; border: 1px solid white; color: #85898F;">PRESENT</h1>
+                </div>
+                <div class="col-4"></div>
+            </div>
         </main>
-        <img src="drip-down.png" class="banner" id="projects">
+        <img src="drip-down.png" class="banner" alt="Ripped Paper">
         <!-- End Timeline -->
 
         <!-- Projects Gallery -->
         <section class="container-fluid" style="background-image: url(projects.jpg); background-size: cover;">
             <div class="row">
-                <h1 style="font-size: 100px;">| PROJECTS |</h1>
-                <div class="col-6">
+                <div class="col">
+                    <div style="height: 100px;" id="projects"></div>
+                    <h1 style="margin-bottom: 50px;">| PROJECTS |</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="card hvr-forward">
-                        <img src="attetarkiainencom.jpg" class="card-img" alt="...">
+                        <img src="attetarkiainencom.jpg" class="card-img" alt="www.attetarkiainen.com">
                         <div class="card-img-overlay">
                             <h5 class="card-title">ATTETARKIAINEN.COM</h5>                            
                             <p class="card-text">HTML | CSS | JQUERY</p>
@@ -188,9 +233,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card hvr-backward">
-                        <img src="somestailausfi.jpg" class="card-img" alt="...">
+                        <img src="somestailausfi.jpg" class="card-img" alt="www.somestailaus.fi">
                         <div class="card-img-overlay">
                             <h5 class="card-title">SOMESTAILAUS.FI</h5>                            
                             <p class="card-text">HTML | CSS | JQUERY</p>
@@ -202,9 +247,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card hvr-forward">
-                        <img src="contactbookpython.jpg" class="card-img" alt="...">
+                        <img src="contactbookpython.jpg" class="card-img" alt="Python Project - Contact Book">
                         <div class="card-img-overlay">
                             <h5 class="card-title">CONTACT-BOOK.EXE</h5>                            
                             <p class="card-text">PYTHON | TKINTER | SMTPLIB | SQLITE3</p>
@@ -214,9 +259,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="card hvr-backward">
-                        <img src="banner.jpg" class="card-img" alt="...">
+                        <img src="banner.jpg" class="card-img" alt="To be announced">
                         <div class="card-img-overlay">
                             <h5 class="card-title">TO BE ANNOUNCED</h5>                            
                             <p class="card-text">JAVA</p>
@@ -228,25 +273,22 @@
                 </div>
             </div>
         </section>
-
         <!-- End Projects Gallery -->
 
-        <!-- Contact Form -->
-        <!-- End Contact Form-->
-
         <!-- Footer -->
-        <img src="drip-up.png" class="banner">
-        <footer class="container">
+        <div style="height: 100px; background-color: white;"></div>
+        <img src="drip-up.png" class="banner" alt="Ripped Paper">
+        <footer class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col-md">
                     <a href="https://instagram.com/atteilari/" hreflang="en" target="_blank" title="Instagram"><p class="fab fa-instagram fa-2x px-4"></p></a>
                     <a href="https://github.com/atteilari/" hreflang="en" target="_blank" title="GitHub"><p class="fab fa-github fa-2x px-4"></p></a>
                 </div>
-                <div class="col">
-                    <p>COPYRIGHT ATTE TARKIAINEN. ALL RIGHTS RESERVED.</p>
+                <div class="col-md">
+                    <p>© COPYRIGHT ATTE TARKIAINEN. ALL RIGHTS RESERVED.</p>
                 </div>
-                <div class="col">
-                    <a href="contact.html" hreflang="en" target="_blank" title="Contact"><p class="far fa-envelope fa-2x px-4"></p></a>
+                <div class="col-md">
+                    <a href="mailto:attetarkiainen1@gmail.com" hreflang="en" target="_blank" title="Contact"><p class="far fa-envelope fa-2x px-4"></p></a>
                     <a href="https://linkedin.com/in/atte-tarkiainen/" hreflang="en" target="_blank" title="Linked In"><p class="fab fa-linkedin-in fa-2x px-4"></p></a>
                 </div>
             </div>

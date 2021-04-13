@@ -1,5 +1,7 @@
+/* Element level CSS first */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -18,10 +20,6 @@ a:hover {
     color: #85898F;
 }
 
-.title {
-    color: #85898F;
-}
-
 main {
     text-shadow: 2px 2px 4px #0f0f0f;
 }
@@ -35,8 +33,74 @@ footer {
     color: #5d626a;
     text-shadow: 2px 2px 4px #0f0f0f;
 }
+/* End Element level CSS */
 
-/* Scroll down animation classes */
+/* Classes in order of appearance in HTML */
+/* Navbar */
+.navbar a {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+/* Navbar vertical dividers with border-right & some padding*/
+.navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+}
+
+.navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid #5d626a;
+}
+
+/* Overwriting BS5 Toggler icon default colors */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(93, 98, 106, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+  border-color: #5d626a !important;
+}
+
+/* Overwriting Bootstrap 5 defaults */
+.bg-dark {
+    background-color: transparent !important;
+    transition: 1s;
+}
+
+.bg-dark.scrolled {
+    background-color: #1b1b1b !important;
+}
+/* End Navbar */
+
+/* Landing */
+.banner {
+    max-width: 100%;
+    background-color: white;
+}
+
+.banner-content-left {
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    top: 160px;
+    left: 100px;
+}
+
+.banner-content-right {
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    top: 160px;
+    right: 80px;
+}
+
+.banner-content-left h1, .banner-content-right h1 {
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+/* Mouse Scroll Down icon */
 .icon-scroll,
 .icon-scroll:before {
   position: absolute;
@@ -65,94 +129,21 @@ footer {
   animation-iteration-count: infinite;
   animation-name: scrolldown;
 }
+/* End landing */
 
-@keyframes scrolldown {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(46px);
-  }
-}
-
-/* navbar */
-.navbar a {
-    margin-top: 25px;
-    margin-bottom: 20px;
-    letter-spacing: 3px;
-    font-size: 13px;
-}
-
-/* Navbar vertical dividers with border-right & some padding*/
-.navbar .navbar-nav .nav-item .nav-link {
-    padding: 0 0.5em;
-}
-
-.navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
-    border-right: 1px solid #5d626a;
-}
-
-/* Overwriting Bootstrap 5 defaults */
-.bg-dark {
-    background-color: transparent !important;
-    transition: 1s;
-}
-
-.bg-dark.scrolled {
-    background-color: #1b1b1b !important;
-}
-
-.banner {
-    max-width: 100%;
-    background-color: white;
-}
-
-.banner-content-left {
-    height: 200px;
-    width: 350px;
-    position: absolute;
-    top: 160px;
-    left: 100px;
-}
-
-.banner-content-right {
-    height: 200px;
-    width: 350px;
-    position: absolute;
-    top: 160px;
-    right: 80px;
-}
-
-.banner-content-left h1, .banner-content-right h1 {
-    font-size: 32px;
-    letter-spacing: 5px;
-}
-
-
-
-/* Audio button used by audio.js */
-#play {
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#landing {
-    background-color: white;
-}
-
+/* About section */
 .about {
     color: #5d626a;
 }
 
-/* Custom animations based on Animate.css */
+/* Customizing Animate.css animation */
 .fadingIn {
     animation: fadeInLeft;
     animation-duration: 2s;
 }
+/* End Animate.css */
 
 /* Custom version of responsive Bootstrap timeline found here: */
-
 .main-timeline {
     position: relative
 }
@@ -335,7 +326,10 @@ footer {
     padding: 20px 50px 20px 0;
     text-align: right
 }
+/* End timeline */
+/* End about */
 
+/* Projects section */
 .card {
     margin-left: 40px;
     margin-right: 40px;
@@ -350,6 +344,59 @@ footer {
     top: 60% !important;
 }
 
+.title {
+    color: #85898F;
+}
+/* End projects */
+/* End classes */
+
+/* ID based CSS in order of appearance */
+/* Audio button used by audio.js */
+#play {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#landing {
+    background-color: white;
+}
+/* End IDs */
+
+/* Keyframes for animations in order of appearance */
+/* Mouse scrolling animation on landing */
+@keyframes scrolldown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+/* End keyframes */
+
+/* Media Querys in order of appearance */
+@media (max-width: 1024px) {
+  .banner-content-left, .banner-content-right {
+    font-size: 12px;
+    top: 120px;
+    width: 300px;
+  }
+  .banner-content-left{
+    left: 20px;
+  }
+  .banner-content-right {
+    right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-content-left, .banner-content-right {
+    display: none;
+  }
+}
+
+/* Timeline */
 @media only screen and (max-width: 991px) {
     .main-timeline .date-content {
         margin-top: 35px
@@ -415,4 +462,4 @@ footer {
         margin-bottom: 10px
     }
 }
-  
+/* End Timeline */
