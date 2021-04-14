@@ -281,7 +281,8 @@ footer {
     margin: auto;
     position: absolute;
     top: 27%;
-    left: 0
+    left: 0;
+    text-shadow: none;
 }
 
 .main-timeline .month {
@@ -338,10 +339,18 @@ footer {
     box-shadow: 2px 5px #1b1b1b;
 }
 
-.card-img-overlay {
+.card-title {
+    position: relative;
+    top: 75%;
     color: white;
     background-color: #1b1b1be3;
-    top: 60% !important;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card-img-overlay {
+    padding: 0px;
 }
 
 .title {
@@ -463,3 +472,27 @@ footer {
     }
 }
 /* End Timeline */
+
+@media (max-width: 1128px) {
+    .card-title {
+      top: 60%;
+    }
+}
+
+@media (max-width: 763px) {
+    .card-title {
+      top: 70%;
+    }
+}
+
+@media (max-width: 516px) {
+    .card-title {
+      top: 50%;
+    }
+}
+
+@media (max-width: 360px) {
+    .card-title {
+      font-size: 12px;
+    }
+}
