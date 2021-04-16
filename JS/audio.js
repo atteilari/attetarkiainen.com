@@ -1,4 +1,4 @@
-var audio = new Audio("website_audio.mp3");
+var audio = new Audio("/Audio/website_audio.mp3");
 
 $('#play').on("click",function(){
   if($(this).hasClass('fa-play'))

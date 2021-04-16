@@ -26,13 +26,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <link rel="stylesheet" href="concept.css">
+        <link rel="stylesheet" href="/CSS/concept.css">
         <!-- End CSS -->
 
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/Images/Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Images/Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Images/Favicon/favicon-16x16.png">
         <!-- End Favicon -->
 
         <title>Atte Tarkiainen | Resume</title>
@@ -66,7 +66,11 @@
 
         <!-- Landing -->
         <section id="landing">
-            <img src="banner.webp" class="banner" alt="Atte Tarkiainen">
+            <picture>
+                <source srcset="/Images/WebP/banner.webp" class="banner" type="image/webp">
+                <source srcset="/Images/JPG/banner.jpg" class="banner" type="image/jpeg">
+                <img class="banner" src="/Images/JPG/banner.jpg">
+            </picture>
             <div class="banner-content-left">
                 <h1>STUDENT</h1>
                 <p>First year Information Technology & Business student in the Bachelors of Business Administration program at Laurea University of Applied Sciences</p>
@@ -211,11 +215,15 @@
                 <div class="col-4"></div>
             </div>
         </main>
-        <img src="drip-down.webp" class="banner" alt="Ripped Paper">
+        <picture>
+            <source srcset="/Images/WebP/drip-down.webp" class="banner" type="image/webp">
+            <source srcset="/Images/JPG/drip-down.jpg" class="banner" type="image/jpeg">
+            <img class="banner" src="/Images/JPG/drip-down.jpg">
+        </picture>
         <!-- End Timeline -->
 
         <!-- Projects Gallery -->
-        <section class="container-fluid" style="background-image: url(projects.jpg); background-size: cover;">
+        <section class="container-fluid" style="background-image: url(/Images/JPG/projects.jpg); background-size: cover;">
             <div class="row">
                 <div class="col">
                     <div style="height: 100px;" id="projects"></div>
@@ -225,7 +233,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card hvr-forward">
-                        <img src="attetarkiainencom.webp" class="card-img" alt="www.attetarkiainen.com">
+                        <picture>
+                            <source srcset="/Images/WebP/attetarkiainencom.webp" class="card-img" type="image/webp">
+                            <source srcset="/Images/JPG/attetarkiainencom.jpg" class="card-img" type="image/jpeg">
+                            <img class="card-img" src="/Images/JPG/attetarkiainencom.jpg">
+                        </picture>
                         <a href="https://github.com/atteilari/attetarkiainen.com" hreflang="en" target="_blank" title="www.attetarkiainen.com project on GitHub">
                             <div class="card-img-overlay">
                                 <h5 class="card-title">ATTETARKIAINEN.COM</h5>
@@ -236,7 +248,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card hvr-backward">
-                        <img src="leetcode.webp" class="card-img" alt="Leetcode Coding Challenge Portfolio">
+                        <picture>
+                            <source srcset="/Images/WebP/leetcode.webp" class="card-img" type="image/webp">
+                            <source srcset="/Images/JPG/leetcode.jpg" class="card-img" type="image/jpeg">
+                            <img class="card-img" src="/Images/JPG/leetcode.jpg">
+                        </picture>
                         <a href="https://github.com/atteilari/leetcode" hreflang="en" target="_blank" title="Leetcode Coding Challenges Portfolio on GitHub">
                             <div class="card-img-overlay">
                                 <h5 class="card-title">LEETCODE CHALLENGES</h5>
@@ -251,7 +267,11 @@
 
         <!-- Footer -->
         <div style="height: 100px; background-color: white;"></div>
-        <img src="drip-up.webp" class="banner" alt="Ripped Paper">
+        <picture>
+            <source srcset="/Images/WebP/drip-up.webp" class="banner" type="image/webp">
+            <source srcset="/Images/JPG/drip-up.jpg" class="banner" type="image/jpeg">
+            <img class="banner" src="/Images/JPG/drip-up.jpg">
+        </picture>
         <footer class="container-fluid">
             <div class="row">
                 <div class="col-md">
@@ -273,9 +293,9 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-        <script src="navbar.js"></script>
-        <script src="audio.js"></script>
-        <script src="about.js"></script>
+        <script src="/JS/navbar.js"></script>
+        <script src="/JS/audio.js"></script>
+        <script src="/JS/about.js"></script>
         <!-- End JavaScript -->
 
     </body>
